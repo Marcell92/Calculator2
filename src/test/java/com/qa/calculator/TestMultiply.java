@@ -1,23 +1,21 @@
 package com.qa.calculator;
 
 import static org.junit.Assert.*;
+
 import org.junit.Test;
 
-public class AdderTest {
-	
-	
-	private Adder adder;
-	
-	
+public class TestMultiply {
+
+	private Multiplier multiplier;
+
 	@Test
 	public void test() {
-		
-		adder = new Adder();
+
+		multiplier = new Multiplier();
 		int expectedValue = 4;
-		int actualValue = adder.add(2,2);
+		int actualValue = multiplier.multiply(2, 2);
 		assertEquals(expectedValue, actualValue);
-		
+
 	}
 
-	
 }
