@@ -2,7 +2,7 @@ package com.qa.calculator;
 
 public class Divider {
 
-	public int divide(int num1, int num2) {
+	public double divide(double num1, double num2) {
 
 		if (num2 == 0) {
 

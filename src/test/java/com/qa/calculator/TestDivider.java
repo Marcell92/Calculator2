@@ -7,14 +7,15 @@ import org.junit.Test;
 public class TestDivider {
 
 	private Divider divider;
+	private static final double DELTA = 1e-15;
 
 	@Test
 	public void test() {
 
 		divider = new Divider();
-		int expectedValue = 2;
-		int actualValue = divider.divide(10, 5);
-		assertEquals(expectedValue, actualValue);
+		double expectedValue = 2.5;
+		double actualValue = divider.divide(10, 4);
+		assertEquals(expectedValue, actualValue, DELTA);
 	}
 
 	@Test(expected = IllegalArgumentException.class)
