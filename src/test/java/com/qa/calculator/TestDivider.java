@@ -17,4 +17,12 @@ public class TestDivider {
 		assertEquals(expectedValue, actualValue);
 	}
 
+	@Test(expected = IllegalArgumentException.class)
+	public void testdividebyzero() {
+
+		divider = new Divider();
+		divider.divide(10, 0);
+
+	}
+
 }

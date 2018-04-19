@@ -6,7 +6,7 @@ public class Divider {
 
 		if (num2 == 0) {
 
-			return 0;
+			throw new IllegalArgumentException("Argument 'divisor' is 0");
 		}
 		return num1 / num2;
 	}
